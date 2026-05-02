@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Bernardo F. Canedo — Cirurgião HPB</title>
+
+<!-- Open Graph / WhatsApp preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr. Bernardo F. Canedo — Cirurgião">
+<meta property="og:description" content="Cirurgia Hepato-Pancreato-Biliar · Transplante Hepático · Cirurgia Geral e do Aparelho Digestivo. Agendamentos: (71) 98145-9205 com Walkiria.">
+<meta property="og:image" content="https://bfcanedo-collab.github.io/BFC/preview.png">
+<meta property="og:url" content="https://bfcanedo-collab.github.io/BFC/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr. Bernardo F. Canedo — Cirurgião">
+<meta name="twitter:description" content="Cirurgia HPB · Transplante Hepático · Agendamentos: (71) 98145-9205">
+<meta name="twitter:image" content="https://bfcanedo-collab.github.io/BFC/preview.png">
+<meta name="description" content="Dr. Bernardo F. Canedo — Cirurgião Hepato-Pancreato-Biliar e Transplante Hepático. Prof. UFBA e UNEB. Agendamentos: (71) 98145-9205.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #042C53;
+    --blue: #185FA5;
+    --blue-mid: #378ADD;
+    --blue-light: #85B7EB;
+    --blue-pale: #E6F1FB;
+    --white: #ffffff;
+    --gray: #6B7280;
+    --gray-light: #F3F4F6;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(4,44,83,0.15), 0 4px 16px rgba(4,44,83,0.08);
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--navy);
+    padding: 2rem 1.75rem 1.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 160px; height: 160px;
+    border-radius: 50%;
+    border: 1px solid rgba(133,183,235,0.15);
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: -20px; right: -20px;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(133,183,235,0.1);
+  }
+  .header-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--blue-light);
+    font-weight: 400;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .header-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+  .header-line {
+    width: 40px;
+    height: 1px;
+    background: var(--blue-mid);
+    margin-bottom: 10px;
+  }
+  .header-sub {
+    font-size: 11px;
+    color: var(--blue-light);
+    letter-spacing: 0.06em;
+    font-weight: 300;
+  }
+
+  /* LATTES LINK no header */
+  .lattes-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--blue-light);
+    text-decoration: none;
+    border: 0.5px solid rgba(133,183,235,0.3);
+    border-radius: 6px;
+    padding: 5px 10px;
+    transition: background 0.2s;
+  }
+  .lattes-link:hover { background: rgba(133,183,235,0.1); }
+  .lattes-link svg { flex-shrink: 0; }
+
+  /* SEÇÕES */
+  .section {
+    padding: 1.25rem 1.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  /* ESPECIALIDADES */
+  .spec-list { display: flex; flex-direction: column; gap: 7px; }
+  .spec-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .spec-dot {
+    width: 3px;
+    min-width: 3px;
+    height: 16px;
+    margin-top: 2px;
+    border-radius: 2px;
+    background: var(--blue);
+  }
+  .spec-dot.secondary { background: var(--blue-light); }
+  .spec-text {
+    font-size: 13px;
+    color: #1a1a2e;
+    line-height: 1.45;
+    font-weight: 400;
+  }
+  .spec-text.secondary { color: var(--gray); }
+
+  /* ATENDIMENTO */
+  .address-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a1a2e;
+    margin-bottom: 2px;
+  }
+  .address-sub {
+    font-size: 12px;
+    color: var(--gray);
+    margin-bottom: 2px;
+  }
+  .address-street {
+    font-size: 12px;
+    color: #9CA3AF;
+    margin-bottom: 12px;
+  }
+  .map-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  .map-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 9px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1a2e;
+    background: var(--gray-light);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .map-btn:hover { background: #e5e7eb; border-color: rgba(0,0,0,0.15); }
+
+  /* AGENDAMENTOS */
+  .booking-section {
+    padding: 1.25rem 1.75rem 1.5rem;
+    background: var(--blue-pale);
+  }
+  .booking-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .booking-number {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--navy);
+    letter-spacing: 0.04em;
+    margin-bottom: 3px;
+  }
+  .booking-name {
+    font-size: 11px;
+    color: var(--blue);
+    font-weight: 400;
+  }
+  .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 11px 16px;
+    border-radius: 10px;
+    background: #25D366;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .whatsapp-btn:hover { background: #1ebe5d; }
+
+  /* FOOTER */
+  .footer {
+    padding: 1rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-top: 1px solid var(--border);
+  }
+  .footer-text {
+    font-size: 10px;
+    color: #9CA3AF;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- HEADER -->
+  <div class="header">
+    <p class="header-label">Cirurgião</p>
+    <h1 class="header-name">Dr. Bernardo<br>F. Canedo</h1>
+    <div class="header-line"></div>
+    <p class="header-sub">CRM-BA 17994 &nbsp;·&nbsp; RQE 17220 / 17221</p>
+    <a class="lattes-link" href="http://lattes.cnpq.br/3490052938262999" target="_blank" rel="noopener">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#85B7EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Currículo Lattes
+    </a>
+  </div>
+
+  <!-- ESPECIALIDADES -->
+  <div class="section">
+    <p class="section-label">Especialidades</p>
+    <div class="spec-list">
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span class="spec-text">Cirurgia Geral e do Aparelho Digestivo</span>
+      </div>
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span class="spec-text">Cirurgia Hepato-Pancreato-Biliar (HPB)</span>
+      </div>
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span class="spec-text">Transplante Hepático</span>
+      </div>
+      <div class="spec-item">
+        <div class="spec-dot"></div>
+        <span class="spec-text">Cirurgia Minimamente Invasiva (Laparoscópica e Robótica)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATENDIMENTO -->
+  <div class="section">
+    <p class="section-label">Atendimento</p>
+    <p class="address-name">Empresarial Horto Office</p>
+    <p class="address-sub">HCI Consultórios Inteligentes</p>
+    <p class="address-street">R. Waldemar Falcão, 979 · sala 404 · Horto Florestal</p>
+    <div class="map-buttons">
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=R.+Waldemar+Falcão+979+Horto+Florestal+Salvador+BA" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#185FA5"/>
+        </svg>
+        Google Maps
+      </a>
+      <a class="map-btn" href="https://waze.com/ul?q=R.+Waldemar+Falcão+979+Horto+Florestal+Salvador+BA&navigate=yes" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M20.54 6.63C19.08 4.2 16.71 2.5 14 2.07V2a2 2 0 0 0-4 0v.07C7.29 2.5 4.92 4.2 3.46 6.63A10 10 0 0 0 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10a10 10 0 0 0-1.46-5.37zM12 20c-4.41 0-8-3.59-8-8 0-1.48.41-2.86 1.12-4.04C6.28 6.04 8.03 5 10 4.58V5a2 2 0 0 0 4 0v-.42c1.97.42 3.72 1.46 4.88 3.38C19.59 9.14 20 10.52 20 12c0 4.41-3.59 8-8 8z" fill="#33CCFF"/>
+          <circle cx="9" cy="11" r="1.5" fill="#33CCFF"/>
+          <circle cx="15" cy="11" r="1.5" fill="#33CCFF"/>
+          <path d="M9 15s1 2 3 2 3-2 3-2" stroke="#33CCFF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Waze
+      </a>
+    </div>
+  </div>
+
+  <!-- AGENDAMENTOS -->
+  <div class="booking-section">
+    <p class="section-label" style="color: var(--blue);">Agendamentos</p>
+    <div class="booking-row">
+      <div>
+        <p class="booking-number">(71) 98145-9205</p>
+        <p class="booking-name">Walkiria · Assessora e Secretária</p>
+      </div>
+      <a class="whatsapp-btn" href="https://wa.me/5571981459205?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Bernardo%20Canedo." target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="white"/>
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.304A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 0 1-4.076-1.12l-.292-.173-3.006.787.806-2.927-.19-.3A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" fill="white"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-text">Prof. UFBA · Faculdade de Medicina da Bahia &nbsp;·&nbsp; Prof. UNEB</p>
+  </div>
+
+</div>
+
+</body>
+</html>
